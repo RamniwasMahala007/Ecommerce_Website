@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 10px;
+    /* overflow: hidden; */
+}
+
+h1{
+    font-size: 5rem;
+    line-height: 6.4rem;
+    color: #222;
+}
+h2{
+    font-size: 4.6rem;
+    line-height: 5.4rem;
+    color: #222;
+}
+h4{
+    font-size: 2rem;
+    color: #222;
+}
+h6{
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+p{
+    font-size: 1.6rem;
+    color: #465b52;
+    margin: 1.5rem 0 2rem 0;
+}
+.section-p1{
+    padding: 4rem 8rem;
+}
+.section-m1{
+    margin: 4rem 0;
+}
+body{
+    width: 100%;
+
+}
+
+/* Header CSS start */
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: azure; */
+    background-color: #e3e6f3;
+    padding: 2rem 3rem;
+    box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.09);
+    width: 100%;
+    z-index: 1;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+#header .logo{
+    width: 15rem;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+#navbar li{
+    list-style: none;
+    padding: 0 2rem;
+    position: relative;
+    
+}
+
+#navbar li a {
+    
+    font-size: large;
+    font-weight: 800;
+    text-decoration:none;
+    color: #1a1a11;
+    transition: 0.3s ease;
+}
+#navbar li a i{
+
+    font-size: large;
+    font-weight: 800;
+    text-decoration: none;
+    color: #1a1a11;
+    
+}
+/* The :hover selector is used to select elements when you mouse over them.      */
+#navbar li a:hover {
+
+    color:blue;
+}
+/* The :active selector is used to select and style the active link.
+ A link becomes active when you click on it. */
+#navbar li a.active {
+
+    color: red;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 2.4vw;
+    height: 0.2rem;
+    background: green;
+    position: absolute;
+    top: 1.7rem;
+    left: 1.9rem;
+}
+
+@media screen and (max-width : 556px) {
+   #header{
+        display: flex;
+        flex-direction: column;
+    }
+        #navbar {
+            flex-direction: column;
+        }
+ #navbar li {
+         border: 1px solid red;
+     margin: 0.5rem auto;
+ }
+
+  header .logo {
+      object-fit: cover;
+      width: 20vh;
+  }
+        } 
+
+
+
+
+/* Home Page */
+#hero{
+    background-image: url("images/hero4.png");
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 20% right 0%;
+    padding: 0 4rem;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+}
+#hero h4{
+    padding-bottom: 1.5rem;
+}
+#hero h1{
+    color: #088178;
+}
+#hero button{
+    background-image: url("images/button.png");
+    background-color: transparent;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    color: #088178;
+    border: 0;
+    padding: 1.4rem 8rem 2rem 7rem;
+    font-weight: 800;
+    font-size: 2rem;
+
+}
