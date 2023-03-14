@@ -175,7 +175,7 @@ body{
     justify-content: center;
     flex-wrap: wrap; */
     justify-content: space-around;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 #feature .fe-box{
     border:0.1rem solid #cce7d0;
